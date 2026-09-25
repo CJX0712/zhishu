@@ -99,7 +99,7 @@ zhishu/
 | M5 | 三形态交付 | Web/API/CLI 均可用 | ✅ 完成（CLI 全命令 / Web 挂载 dist / API 全端点均实测通过） |
 | M6 | 评测与基线 | RAGAS 报告 + 对标表 | ✅ 完成（context_recall 0.98 / faithfulness 1.0 / answer_relevancy 0.67 / 延迟 ~5.7s，本地 1.5B CPU 实测） |
 | M7 | Docker 一键复现 | clone→compose up→demo 零手工 | ✅ 配置校验通过（compose config OK）；各构建步骤已分别验证（前端 npm run build 成功、uv.lock 可复现安装、应用全链路跑通）；完整镜像构建仅受本沙箱 Docker Hub 不可达（auth.docker.io 502）阻塞，标准环境/配镜像加速器即可一键复现 |
-| M8 | 文档 + 推送仓库 | 架构/部署/使用齐 + GitHub 晨星 | ⚠️ |
+| M8 | 文档 + 推送仓库 | 架构/部署/使用齐 + GitHub 晨星 | ✅ 完成（已推送 https://github.com/CJX0712/zhishu ，作者 晨星，分支 main） |
 
 ## 7. 风险与对策
 - 16GB 内存跑 7B q4 偏紧 → 默认支持 3B/1.5B 小模型，7B 可选；云端模式零本地负载。
