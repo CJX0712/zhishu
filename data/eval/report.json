@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "samples": 3,
+    "context_recall_avg": 0.98,
+    "faithfulness_avg": 1.0,
+    "answer_relevancy_avg": 0.672,
+    "avg_latency_s": 5.735
+  },
+  "details": [
+    {
+      "question": "标准发货后几天内可以全额退款？",
+      "answer": "标准发货后 7 天内可以全额退款。",
+      "context_recall": 0.939,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.867,
+      "latency_s": 3.39,
+      "citations": 1
+    },
+    {
+      "question": "年假是怎么计算的？",
+      "answer": "年假按入职年限计算：满 1 年 5 天，满 3 年 10 天，满 5 年 15 天。",
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.444,
+      "latency_s": 9.612,
+      "citations": 1
+    },
+    {
+      "question": "单笔报销超过多少金额需要双重审批？",
+      "answer": "单笔报销超过 5000 元需要双重审批。",
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.706,
+      "latency_s": 4.204,
+      "citations": 1
+    }
+  ]
+}

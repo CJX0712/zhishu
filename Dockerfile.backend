@@ -1,0 +1,22 @@
+# 多阶段构建：先编译前端，再打包 Python 后端（含静态资源）
+FROM node:20-slim AS web
+WORKDIR /web
+COPY web/package.json web/package-lock.json* ./
+RUN npm install
+COPY web/ ./
+RUN npm run build
+
+FROM python:3.11-slim AS py
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+
+# 使用 uv 做可复现安装
+COPY pyproject.toml uv.lock ./
+RUN pip install --no-cache-dir uv
+RUN uv sync --no-dev --frozen
+
+COPY . .
+COPY --from=web /web/dist ./web/dist
+
+EXPOSE 8000
+CMD ["sh", "-c", "uv run zhishu serve --host 0.0.0.0 --port 8000"]

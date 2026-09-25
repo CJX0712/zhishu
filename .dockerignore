@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv
+node_modules/
+web/node_modules/
+web/dist/
+.git/
+.env
+*.local
+models/
+data/models/

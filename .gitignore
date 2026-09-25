@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Env / secrets
+.env
+*.local
+
+# Models & data caches (downloaded at runtime)
+data/models/
+models/
+.models/
+
+# Node
+web/node_modules/
+web/dist/
+web/.vite/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
