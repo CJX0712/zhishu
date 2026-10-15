@@ -1,5 +1,12 @@
 # 智枢 ZhiShu
 
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/CJX0712/zhishu/blob/main/LICENSE) [![Language](https://img.shields.io/badge/Python-3776AB?logo=python)](https://github.com/CJX0712/zhishu) [![Author](https://img.shields.io/badge/author-晨星-blueviolet)](https://github.com/CJX0712)
+
+</div>
+
+
 企业级 AI 知识中枢与智能体平台。**本地优先、混合推理**：RAG 知识问答 + ReAct Agent 工具编排，统一以 **Web / REST API / CLI** 三种形态交付，Docker Compose 一键复现。
 
 > 完整文档见 `docs/`（架构 / 部署 / 使用）。开工基线见 `PLAN.md`。
